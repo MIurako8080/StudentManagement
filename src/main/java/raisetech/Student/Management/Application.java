@@ -13,8 +13,11 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+
+
 	@GetMapping("/hello")
 	public String hello() {
+		System.out.println("Hello");
 		return "Hello, world";
 	}
 
