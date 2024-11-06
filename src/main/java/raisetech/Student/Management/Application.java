@@ -19,6 +19,7 @@ public class Application {
 	}
 
 
+
 	@GetMapping("/studentInfo")
 	public String getStudentInfo() {
 		return name + " " +age+ "歳";
@@ -33,6 +34,3 @@ public class Application {
 	@PostMapping("/studentName")
 	public void updateStudentName(String name) {
 		this.name = name;
-	}
-
-}
