@@ -28,12 +28,16 @@ public class Application {
 	@PostMapping("/student")
 	public void registerStudent(String name, int age) {
 		repository.registerStudent(name,age);
+
+
+	
 	}
 
 	@PatchMapping("/student")
 	public void updateStudentName(String name,int age) {
 		repository.updateStudent(name,age);
 	}
+
 
 	@DeleteMapping("/student")
 	public void deleteStudent(String name) {
